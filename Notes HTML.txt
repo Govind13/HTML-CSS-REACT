@@ -1,0 +1,18 @@
+use <strong> instead of <b> for bold
+use <em> instead of <i> for itallics
+
+ordered and unprdered lists
+<ol>
+  <li></li>
+</ol>
+
+<ul>
+  <li></li>
+</ul>
+
+attributes used to desribe tags, eg)src
+alt inside <image> is used to describe an image so browser understands
+
+In Images, if u dont specify height or width, it automatically scales according to the given attribute
+
+<nav> <header> <article> are used to simply group the html elements inside the code to make better sense to the developer

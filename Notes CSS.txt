@@ -1,0 +1,56 @@
+Inline CSS - Writes code inside the elements in html
+Dont use inline
+
+Internal CSS - Delcare style element inside head tag
+
+We use # for id in css and . for classes in css
+
+preferably always use class for future proofing
+
+
+article p:first-child {
+  color: red;
+}
+
+This would only work if the first child of article is a <P> tag
+
+Conflicting css style for same element if occurs, highest priority is given to id, then class or psuedo class, then element. If multiple of same, then last one is selected. Least Priority for * (universal Selector).
+If Inline styles are present in HTML, then it is given highest priority.
+Inherited properties have the least priority.
+
+* (universal selector) applies certain style like border top to all elements.
+Margin cannot be inherited, use universal selector to apply for all
+
+bottom and top space of margins of continous items doesn't get added. It considers the larger margin.
+
+use display:block to convert inline element like links etc to a block element to have horizontal margins and paddings.(works the opposite way too).
+inline-block doesnt change the behaviour, but enable us to use margins all direction
+
+Absolute positioning makes no impact on surrounding elements but might overlap them. It always stays in the same without moving relative to the positioning of the window
+
+h1: is used for psuedo class
+h1:: is used for pseudo elements
+
+
+
+FLEXBOX
+
+Used to create 1 dimensional layouts.
+flexbox uses the necessary width, but for height, it uses that of the largest element if mentioned.
+helps us to automatically align items inside parent container
+refer the PDF for flexbox terminologies
+refer about flexbox element orders
+if the width of the flexbox or flex-basis is less than the content inside the flexbox it will automatically increase the width to accommodate the content.
+Refer felx grow and flex shrink
+
+in Flex tag -> flex(grow shrink basis).
+
+you can always fix your CSS code by calling the tax after once you have declared that in the beginning of the code It is like that You can call a tag at the end of the code and overwrite the properties that you have already mentioned in the beginning.
+
+
+
+CSS GRID
+
+used to create 2 dimensional building blocks
+in CSS grid the height of each box will be the maximum height of an element in that specific row.
+if an element has a specific height defined then it would not be taking the height of the CSS grid.
